@@ -1,0 +1,10 @@
+Generics allow us to write classes, interfaces, and methods that work with different data types while maintaining type safety.
+ClassLoader
+TypeEraser
+Bounded Generics
+Wildcard
+Type Erasure
+Clonnable Interface(Marker Interface)
+enum, user defined constants
+Generic Interfaces
+Bounded Parameters
