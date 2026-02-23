@@ -1,0 +1,15 @@
+Staging & Non-Staging area
+Branches
+Merging Branches
+Forks
+Rebase!!
+Logs
+
+Deployment(.jar, .var files)
+Database
+Linux
+Cloud
+SpringBoot(Frameworks)
+Microservices
+SDLC
+Integration Tests

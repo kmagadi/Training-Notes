@@ -1,0 +1,9 @@
+Fail-fast
+Fail-safe
+Throwable class(JAVA)
+
+Log-SF4J
+AOP-Aspect Oriented Programming
+LLD
+JAVA
+SpringBoot(CRUD app, controller, service, beans)

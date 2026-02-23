@@ -1,0 +1,9 @@
+Elastisearch
+Re-indexing
+Indexing in databases
+Window functions
+CTE!!
+Partitions
+
+-- HOMEWORK
+LEAD & LAG functions in SQL(use-cases)

@@ -1,0 +1,38 @@
+Real-Time Trending Products Engine
+This project implements a backend system designed for high-traffic e-commerce platforms to detect trending products and categories during peak events like Flash Sales. The system processes a continuous stream of order events and identifies popularity within a sliding 10-minute window
+
+Features
+1. Real-Time Top 5 Products
+Identifies the top 5 products with the highest order count globally
+Maintains accuracy by only considering events from the last 10 minutes
+Updates the ranking in real-time as new events arrive
+
+2. Regional Trending Categories
+Groups trends by geographical region (e.g., India, US)
+Identifies the top 3 trending categories for each specific region
+
+3. Efficiency and Performance
+Thread-safe implementation to handle simultaneous events from millions of users
+Memory-efficient architecture that automatically removes expired entries
+Fast lookup and updates using optimized Java Collections
+
+Technical Design
+The engine utilizes a sliding window algorithm to ensure only relevant data is processed:
+- Event Storage: Uses a Deque to maintain the insertion order of events, allowing for fast removal of expired data from the front
+- Frequency Tracking: Utilizes HashMaps for O(1) key-to-count lookups and updates
+- Sliding Window: A background cleanup process removes events older than 10 minutes from the queue and decrements their counts in the frequency maps simultaneously
+
+Data Structure Requirements
+- The OrderEvent object consists of the following attributes:
+    orderId: Unique identifier for the transaction
+    userId: Unique identifier for the customer
+    productId: Unique identifier for the product
+    category: The product category (e.g., Electronics, Books)
+    region: The geographical location of the order
+    timestamp: The epoch time when the order was placed
+
+Constraints and Performance Goals
+- Insertion: Achieves O(1) time complexity for recording new events.
+- Frequency Update: Achieves O(1) time complexity for updating product and category counts.
+- Expiration: Efficiently removes data older than 10 minutes to maintain a constant memory footprint.
+- Concurrency: Ensures data integrity through thread-safe collections or synchronization.
