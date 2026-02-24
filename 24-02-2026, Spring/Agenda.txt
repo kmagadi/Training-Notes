@@ -1,0 +1,17 @@
+Dependency Injection
+IOC
+AOP, IOC
+POJO, DAO, DTO
+Spring Container
+Beans & Bean Lifecycle
+Spring Profiles
+Scopes
+Annotations
+Maven, Gradle
+Tomcat, Jetty
+@SpringBootApplication -> above main class ( 3 annotations )
+Jenkins
+TDD(Test Driven Development) & BDD(Behaviour Driven Development)
+Functional testing(Unit + Integeration testing)
+Path variable
+Stream API
