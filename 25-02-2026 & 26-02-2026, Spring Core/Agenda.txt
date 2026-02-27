@@ -1,0 +1,14 @@
+Spring Container{ApplicationContext}
+Annotations{Repository, Service, ApplicationContext, Component, Service, Repository, Qualifier, Auto, Primary, EnableAutoConfiguration, AutoConfiguration, Transaction, Lambord}
+Fetch type, inititalization{Lazy}
+LazyLoading, EagerLoading 
+DTO
+StreamAPI
+ORM-Object Relational Mapping
+Hibernate, JPA, CRUD, JDBC(Lifecycle){JDBC Template}
+Pagination(Scrool-based, Button-based)
+Pooling(Normal, Long){API Calling}
+Configuring application properties
+.yaml
+Transaction
+
